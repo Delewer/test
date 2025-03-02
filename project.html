@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Vicolemn</title>
+
+
+   <!-- bootstrap core css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+   <!-- fonts style -->
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+ 
+   <!--owl slider stylesheet -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+ 
+   <!-- Подключаем jQuery и Owl Carousel JS -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ 
+   <!-- font awesome style -->
+   <link href="css/font-awesome.min.css" rel="stylesheet" />
+ 
+   <!-- Custom styles for this template -->
+   <link href="css/style.css" rel="stylesheet" />
+   <!-- responsive style -->
+   <link href="css/responsive.css" rel="stylesheet" />
+</head>
+<style>
+  .language-selector img {
+  width: 40px; /* Размер флагов */
+  height: auto;
+  margin: 0 10px;
+  cursor: pointer;
+}
+</style>
+<body>
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="Logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html" id="home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="project.html" id="project">Catalog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" id="contact">Contactează-ne</a></li>
+              </ul>
+
+              <!-- Language selector -->
+              <div class="language-selector">
+                <img src="images/flag-uk.png" alt="English" onclick="changeLanguage('en')" title="English">
+                <img src="images/flag-russia.png" alt="Русский" onclick="changeLanguage('ru')" title="Русский">
+                <img src="images/flag-romania.png" alt="Română" onclick="changeLanguage('ro')" title="Română">
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+
+<script>
+    const translations = {
+      "en": {
+        "home": "Home",
+        "project": "Catalogue",
+        "contact": "Contact Us",
+        "slider-title-1": "Natural <br> sustainable <br> and eco-friendly materials",
+        "slider-title-2": "Custom <br> Woodworking & <br> Furniture Production",
+        "slider-title-3": "Wholesale & Retail <br> Wood & Construction <br> Materials",
+        "contact-button-1": "Contact Us",
+        "contact-button-2": "Contact Us",
+        "contact-button-3": "Contact Us",
+        "service-heading": "Our Services",
+        "service-description": "We provide complete solutions for wood processing, furniture production, trade, and construction.",
+        "service-1-title": "Furniture Production",
+        "service-1-description": "We create custom furniture from high-quality materials, tailored to your needs.",
+        "service-2-title": "Wood Processing",
+        "service-2-description": "We offer wood processing services for various industrial and commercial uses.",
+        "service-3-title": "Trade in Wood Materials",
+        "service-3-description": "We distribute wood materials and wood products for construction and furniture.",
+        "service-4-title": "Construction and Renovation",
+        "service-4-description": "We perform construction, renovation, and site preparation for real estate projects.",
+        "read_more": "Read More",
+        "why_choose_us": "Why Choose Us?",
+        "project_done_on_time": "Project done on time",
+        "project_description": "Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the",
+        "always_available": "Always available",
+        "available_description": "Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the",
+        "professional_responsible": "Professional and responsible",
+        "professional_description": "Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the",
+        "read_more": "Read More",
+        // Добавленные переводы для секции Featured Products
+        "featured-products-title": "Featured Products",
+        "product-1-title": "Solid Wood Table",
+        "product-1-description": "Handcrafted from 100% natural oak with an elegant finish.",
+        "product-2-title": "Rustic Bookshelf",
+        "product-2-description": "Minimalist design with generous space for books and decorations.",
+        "product-3-title": "Carved Wooden Chair",
+        "product-3-description": "The perfect blend of tradition and comfort, handmade.",
+        "contact-us": "Contact us",
+        "follow": "Follow us",
+        "location":"Our location"
+      },
+      "ru": {
+        "home": "Главная",
+        "project": "Каталог",
+        "contact": "Контакты",
+        "slider-title-1": "Натуральные <br> Экологичные <br> и Устойчивые Материалы",
+        "slider-title-2": "Деревообработка <br> и Производство <br> Индивидуальной Мебели",
+        "slider-title-3": "Оптовая и розничная торговля <br> Древесина и строительные материалы",
+        "contact-button-1": "Связаться с нами",
+        "contact-button-2": "Связаться с нами",
+        "contact-button-3": "Связаться с нами",
+        "service-heading": "Наши Услуги",
+        "service-description": "Мы предоставляем комплексные решения для обработки дерева, производства мебели, торговли и строительства.",
+        "service-1-title": "Производство Мебели",
+        "service-1-description": "Мы создаем индивидуальную мебель из высококачественных материалов, адаптированную к вашим потребностям.",
+        "service-2-title": "Обработка Дерева",
+        "service-2-description": "Мы предоставляем услуги по обработке дерева для различных промышленных и коммерческих нужд.",
+        "service-3-title": "Торговля Древесными Материалами",
+        "service-3-description": "Мы поставляем древесные материалы и изделия из дерева для строительства и мебели.",
+        "service-4-title": "Строительство и Ремонт",
+        "service-4-description": "Мы выполняем строительные работы, ремонт и подготовку участка для недвижимости.",
+        "read_more": "Читать далее",
+        "why_choose_us": "Почему выбирают нас?",
+        "project_done_on_time": "Проект выполнен вовремя",
+        "project_description": "Lorem Ipsum - это не просто случайный текст. Он имеет корни в классической латинской литературе с 45 года до н.э., что делает его более 2000 лет. Ричард МакКлинток, профессор латинского языка в колледже Хэмпден-Сидни в Вирджинии, нашел одно из более редких латинских слов, consectetur, в отрывке из Lorem Ipsum и изучил его.",
+        "always_available": "Всегда доступно",
+        "available_description": "Lorem Ipsum - это не просто случайный текст. Он имеет корни в классической латинской литературе с 45 года до н.э., что делает его более 2000 лет. Ричард МакКлинток, профессор латинского языка в колледже Хэмпден-Сидни в Вирджинии, нашел одно из более редких латинских слов, consectetur, в отрывке из Lorem Ipsum и изучил его.",
+        "professional_responsible": "Профессионализм и ответственность",
+        "professional_description": "Lorem Ipsum - это не просто случайный текст. Он имеет корни в классической латинской литературе с 45 года до н.э., что делает его более 2000 лет. Ричард МакКлинток, профессор латинского языка в колледже Хэмпден-Сидни в Вирджинии, нашел одно из более редких латинских слов, consectetur, в отрывке из Lorem Ipsum и изучил его.",
+        "read_more": "Читать далее",
+        // Добавленные переводы для секции Featured Products
+        "featured-products-title": "Рекомендуемые товары",
+        "product-1-title": "Стол из массива дерева",
+        "product-1-description": "Изготовлен вручную из 100% натурального дуба с элегантной отделкой.",
+        "product-2-title": "Рустикальная книжная полка",
+        "product-2-description": "Минималистичный дизайн с большим пространством для книг и декораций.",
+        "product-3-title": "Резной деревянный стул",
+        "product-3-description": "Идеальное сочетание традиций и комфорта, изготовлено вручную.",
+        "contact-us": "Связаться с нами",
+        "follow": "Подпишись",
+        "location":"Наше местоположение"
+      },
+      "ro": {
+        "home": "Acasă",
+        "project": "Catalog",
+        "contact": "Contactează-ne",
+        "slider-title-1": "Materiale naturale <br> sustenabile <br> și prietenoase cu mediul",
+        "slider-title-2": "Prelucrare lemn <br> și Producție <br> Mobilier Personalizat",
+        "slider-title-3": "Comerț cu ridicata și cu amănuntul <br> Materiale lemnoase și de construcție",
+        "contact-button-1": "Contactează-ne",
+        "contact-button-2": "Contactează-ne",
+        "contact-button-3": "Contactează-ne",
+        "service-heading": "Serviciile noastre",
+        "service-description": "Oferim soluții complete pentru prelucrarea lemnului, producția de mobilier, comerț și construcții.",
+        "service-1-title": "Producție Mobilier",
+        "service-1-description": "Realizăm mobilier personalizat din materiale de calitate, adaptat nevoilor tale.",
+        "service-2-title": "Prelucrarea Lemnului",
+        "service-2-description": "Oferim servicii de prelucrare a lemnului pentru diverse utilizări industriale și comerciale.",
+        "service-3-title": "Comerț cu Materiale Lemnoase",
+        "service-3-description": "Distribuim materiale lemnoase și produse din lemn pentru construcții și mobilier.",
+        "service-4-title": "Construcții și Amenajări",
+        "service-4-description": "Executăm lucrări de construcții, renovări și pregătire a terenului pentru proiecte imobiliare.",
+        "read_more": "Citește mai mult",
+        "why_choose_us": "De ce să ne alegi?",
+        "project_done_on_time": "Proiectul realizat la timp",
+        "project_description": "Lorem Ipsum nu este doar un text aleator. Are rădăcini într-o lucrare clasică latină din anul 45 î.Hr., făcându-l mai vechi de 2000 de ani. Richard McClintock, un profesor de latină la Colegiul Hampden-Sydney din Virginia, a căutat unul dintre cuvintele latine mai obscure, consectetur, dintr-un pasaj din Lorem Ipsum și l-a studiat.",
+        "always_available": "Întotdeauna disponibil",
+        "available_description": "Lorem Ipsum nu este doar un text aleator. Are rădăcini într-o lucrare clasică latină din anul 45 î.Hr., făcându-l mai vechi de 2000 de ani. Richard McClintock, un profesor de latină la Colegiul Hampden-Sydney din Virginia, a căutat unul dintre cuvintele latine mai obscure, consectetur, dintr-un pasaj din Lorem Ipsum și l-a studiat.",
+        "professional_responsible": "Profesional și responsabil",
+        "professional_description": "Lorem Ipsum nu este doar un text aleator. Are rădăcini într-o lucrare clasică latină din anul 45 î.Hr., făcându-l mai vechi de 2000 de ani. Richard McClintock, un profesor de latină la Colegiul Hampden-Sydney din Virginia, a căutat unul dintre cuvintele latine mai obscure, consectetur, dintr-un pasaj din Lorem Ipsum și l-a studiat.",
+        "read_more": "Citește mai mult",
+        // Добавленные переводы для секции Featured Products
+        "featured-products-title": "Produse Recomandate",
+        "product-1-title": "Masă din lemn masiv",
+        "product-1-description": "Fabricată manual din stejar 100% natural, cu un finisaj elegant.",
+        "product-2-title": "Bibliotecă rustică",
+        "product-2-description": "Design minimalist cu spațiu generos pentru cărți și decorațiuni.",
+        "product-3-title": "Scaun din lemn sculptat",
+        "product-3-description": "Combinația perfectă între tradiție și confort, realizat manual.",
+        "contact-us": "Contactează-ne",
+        "follow": "Abonează-te",
+        "location":"Locația noastră"
+      }
+    };
+    
+    function changeLanguage(language) {
+      // Изменение текста для навигации
+      document.getElementById('home').innerText = translations[language]["home"];
+      document.getElementById('project').innerText = translations[language]["project"];
+      document.getElementById('contact').innerText = translations[language]["contact"];
+      
+      // Изменение текста для слайдов
+      document.getElementById('slider-title-1').innerHTML = translations[language]["slider-title-1"];
+      document.getElementById('slider-title-2').innerHTML = translations[language]["slider-title-2"];
+      document.getElementById('slider-title-3').innerHTML = translations[language]["slider-title-3"];
+      
+      // Изменение текста для кнопок
+      document.getElementById('contact-button-1').innerText = translations[language]["contact-button-1"];
+      document.getElementById('contact-button-2').innerText = translations[language]["contact-button-2"];
+      document.getElementById('contact-button-3').innerText = translations[language]["contact-button-3"];
+    
+      // Перевод для секции услуг
+      document.getElementById('service-heading').innerText = translations[language]["service-heading"];
+      document.getElementById('service-description').innerText = translations[language]["service-description"];
+    
+      // Перевод для каждого из блоков с услугами
+      document.getElementById('service-1-title').innerText = translations[language]["service-1-title"];
+      document.getElementById('service-1-description').innerText = translations[language]["service-1-description"];
+      document.getElementById('service-2-title').innerText = translations[language]["service-2-title"];
+      document.getElementById('service-2-description').innerText = translations[language]["service-2-description"];
+      document.getElementById('service-3-title').innerText = translations[language]["service-3-title"];
+      document.getElementById('service-3-description').innerText = translations[language]["service-3-description"];
+      document.getElementById('service-4-title').innerText = translations[language]["service-4-title"];
+      document.getElementById('service-4-description').innerText = translations[language]["service-4-description"];
+    
+    
+      // Перевод для секции "Почему выбирают нас"
+      document.getElementById('why_choose_us').innerText = translations[language].why_choose_us;
+      document.getElementById('project_done_on_time').innerText = translations[language].project_done_on_time;
+      document.getElementById('project_description').innerText = translations[language].project_description;
+      document.getElementById('always_available').innerText = translations[language].always_available;
+      document.getElementById('available_description').innerText = translations[language].available_description;
+      document.getElementById('professional_responsible').innerText = translations[language].professional_responsible;
+      document.getElementById('professional_description').innerText = translations[language].professional_description;
+    
+      // Перевод для секции "Featured Products"
+      document.getElementById('featured-products-title').textContent = translations[language]["featured-products-title"];
+      document.getElementById('product-1-title').textContent = translations[language]["product-1-title"];
+      document.getElementById('product-1-description').textContent = translations[language]["product-1-description"];
+      document.getElementById('product-2-title').textContent = translations[language]["product-2-title"];
+      document.getElementById('product-2-description').textContent = translations[language]["product-2-description"];
+      document.getElementById('product-3-title').textContent = translations[language]["product-3-title"];
+      document.getElementById('product-3-description').textContent = translations[language]["product-3-description"];
+    
+      document.getElementById('contact-us').textContent = translations[language]["contact-us"];
+      document.getElementById('location').textContent = translations[language]["location"];
+      document.getElementById('follow').textContent = translations[language]["follow"];
+    }
+    
+    // Устанавливаем язык по умолчанию
+    changeLanguage('ro');
+    
+</script>
+</body>
+
+
+ <!-- Proiecte -->
+<section class="project_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2>Proiecte</h2>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter_box" id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')" aria-label="Show all projects">Arată toate</button>
+      <button class="btn" onclick="filterSelection('bucatarii')" aria-label="Filter by kitchens">Bucătării</button>
+      <button class="btn" onclick="filterSelection('usi')" aria-label="Filter by doors">Uși</button>
+      <button class="btn" onclick="filterSelection('scari')" aria-label="Filter by stairs">Scări de interior</button>
+      <button class="btn" onclick="filterSelection('dulapuri')" aria-label="Filter by cabinets">Dulapuri</button>
+      <button class="btn" onclick="filterSelection('mese')" aria-label="Filter by tables">Mese</button>
+      <button class="btn" onclick="filterSelection('mese_gradina')" aria-label="Filter by garden tables">Mese de grădină</button>
+      <button class="btn" onclick="filterSelection('foisoare')" aria-label="Filter by gazebos">Foișoare</button>
+    </div>
+
+    <!-- Project Grid -->
+    <div class="project-container">
+      
+      <!-- Bucătării -->
+      <div class="filterDiv bucatarii show">
+        <div class="project-card">
+          <img src="images/ucatarii/back.png" alt="Bucătărie modernă">
+          <div class="project-info">
+            <h3>Bucătărie modernă</h3>
+            <p>Design contemporan cu materiale de calitate.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Uși -->
+      <div class="filterDiv usi">
+        <div class="project-card">
+          <img src="images/usi/usi1.jpg" alt="Ușă din lemn masiv">
+          <div class="project-info">
+            <h3>Ușă din lemn masiv</h3>
+            <p>Ideală pentru un interior elegant și durabil.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filterDiv usi">
+        <div class="project-card">
+          <img src="images/usi/usi2.jpg" alt="Ușă glisantă">
+          <div class="project-info">
+            <h3>Ușă glisantă</h3>
+            <p>Modernă, economisind spațiu și oferind un design elegant.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scări de interior -->
+      <div class="filterDiv scari">
+        <div class="project-card">
+          <img src="images/scari/scari1.jpg" alt="Scară din lemn masiv">
+          <div class="project-info">
+            <h3>Scară din lemn masiv</h3>
+            <p>Durabilă și estetică, potrivită pentru orice locuință.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dulapuri -->
+      <div class="filterDiv dulapuri">
+        <div class="project-card">
+          <img src="images/dulapuri/dulap1.jpg" alt="Dulap din lemn de stejar">
+          <div class="project-info">
+            <h3>Dulap din lemn de stejar</h3>
+            <p>Robust și elegant, perfect pentru orice cameră.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="filterDiv dulapuri">
+        <div class="project-card">
+          <img src="images/dulapuri/dulap2.jpg" alt="Dulap cu 4 uși">
+          <div class="project-info">
+            <h3>Dulap cu 4 uși</h3>
+            <p>Pentru un depozit perfect organizat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mese -->
+      <div class="filterDiv mese">
+        <div class="project-card">
+          <img src="images/mese/masa1.jpg" alt="Masă din lemn masiv">
+          <div class="project-info">
+            <h3>Masă din lemn masiv</h3>
+            <p>Design elegant și rezistent.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mese de grădină -->
+      <div class="filterDiv mese_gradina">
+        <div class="project-card">
+          <img src="images/mese_gradina/masa_g1.jpg" alt="Masă de grădină">
+          <div class="project-info">
+            <h3>Masă de grădină</h3>
+            <p>Perfectă pentru exterior, rezistentă la intemperii.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foișoare -->
+      <div class="filterDiv foisoare">
+        <div class="project-card">
+          <img src="images/foisoare/foisor1.jpg" alt="Foișor rustic">
+          <div class="project-info">
+            <h3>Foișor rustic</h3>
+            <p>Un loc ideal pentru relaxare în aer liber.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer_section">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Information -->
+      <div class="col-md-4">
+        <div class="footer_contact">
+          <h4 id="contact-us">Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> 123 Street Name, City</li>
+            <li><i class="fas fa-phone-alt"></i> +123 456 789</li>
+            <li><i class="fas fa-envelope"></i> info@example.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-md-4">
+        <div class="footer_map">
+          <h4 id="location">Our Location</h4>
+          <div id="footerHereMap" style="width: 100%; height: 250px;"></div>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="col-md-4">
+        <div class="footer_social">
+          <h4 id="follow">Follow Us</h4>
+          <ul class="social-icons">
+            <li><a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подключение HERE Maps API (добавьте только один раз в документе, если уже есть в секции Contact) -->
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+
+  <!-- Инициализация карты HERE в футере -->
+  <script>
+    function initializeFooterHereMap() {
+      const platform = new H.service.Platform({
+        apikey: 'YOUR_API_KEY_HERE' // Замените на ваш API-ключ
+      });
+
+      const defaultLayers = platform.createDefaultLayers();
+
+      const map = new H.Map(
+        document.getElementById('footerHereMap'),
+        defaultLayers.vector.normal.map,
+        {
+          zoom: 13, // Увеличенный масштаб для футера
+          center: { lat: 47.346997, lng: 27.949477 } // Координаты из вашего iframe
+        }
+      );
+
+      // Добавление маркера
+      const marker = new H.map.Marker({ lat: 47.346997, lng: 27.949477});
+      map.addObject(marker);
+
+      // Поведение (перетаскивание, масштабирование)
+      const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+
+      // UI-элементы (кнопки масштаба)
+      const ui = H.ui.UI.createDefault(map, defaultLayers);
+    }
+
+    // Инициализация карты после загрузки страницы
+    // Если у вас уже есть window.onload для Contact карты, объедините их
+    window.addEventListener('load', function () {
+      initializeFooterHereMap();
+    });
+  </script>
+</footer>
+<!-- End Footer Section -->
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!--  OwlCarousel 2 - Filter -->
+  <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
