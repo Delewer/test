@@ -62,7 +62,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html" id="home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html" id="home">Principală</a></li>
                 <li class="nav-item"><a class="nav-link" href="project.html" id="project">Catalog</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html" id="contact">Contactează-ne</a></li>
               </ul>
@@ -80,7 +80,8 @@
     </header>
   </div>
 
-  <script>
+<script>
+
 const translations = {
   "en": {
     "home": "Home",
@@ -113,15 +114,29 @@ const translations = {
     "read_more": "Read More",
     // Добавленные переводы для секции Featured Products
     "featured-products-title": "Featured Products",
-    "product-1-title": "Solid Wood Table",
-    "product-1-description": "Handcrafted from 100% natural oak with an elegant finish.",
-    "product-2-title": "Rustic Bookshelf",
-    "product-2-description": "Minimalist design with generous space for books and decorations.",
-    "product-3-title": "Carved Wooden Chair",
-    "product-3-description": "The perfect blend of tradition and comfort, handmade.",
+    "product-1-title": "Wooden table",
+    "product-1-description": "Handcrafted with an elegant finish.",
+    "product-2-title": "Modern kitchen",
+    "product-2-description": "Minimalist design with generous space.",
+    "product-3-title": "Wooden Gazebo",
+    "product-3-description": "Perfect for boisterous parties and relaxing sunbathing, handmade.",
     "contact-us": "Contact us",
     "follow": "Follow us",
-    "location":"Our location"
+    "location":"Our location",
+    "projects-title": "Projects",
+    "filter-all": "Show all",
+    "filter-kitchens": "Kitchens",
+    "filter-doors": "Doors",
+    "filter-stairs": "Interior Stairs",
+    "filter-cabinets": "Cabinets",
+    "filter-tables": "Tables",
+    "filter-garden-tables": "Garden Tables",
+    "filter-gazebos": "Gazebos",
+    "project-title-1": "Modern Kitchen",
+    "project-desc-1": "Contemporary design with high-quality materials.",
+    "modal-title": "Project Title",
+    "modal-desc": "Additional project description",
+    "contact-btn": "Contact Us"
   },
   "ru": {
     "home": "Главная",
@@ -154,18 +169,32 @@ const translations = {
     "read_more": "Читать далее",
     // Добавленные переводы для секции Featured Products
     "featured-products-title": "Рекомендуемые товары",
-    "product-1-title": "Стол из массива дерева",
-    "product-1-description": "Изготовлен вручную из 100% натурального дуба с элегантной отделкой.",
-    "product-2-title": "Рустикальная книжная полка",
-    "product-2-description": "Минималистичный дизайн с большим пространством для книг и декораций.",
-    "product-3-title": "Резной деревянный стул",
-    "product-3-description": "Идеальное сочетание традиций и комфорта, изготовлено вручную.",
+    "product-1-title": "Деревянный стол",
+    "product-1-description": "Элегантная ручная работа.",
+    "product-2-title": "Современная кухня",
+    "product-2-description": "Минималистичный дизайн и простор.",
+    "product-3-title": "Деревянная беседка",
+    "product-3-description": "Идеально подходит для шумных вечеринок и расслабляющего принятия солнечных ванн, ручная работа.",
     "contact-us": "Связаться с нами",
     "follow": "Подпишись",
-    "location":"Наше местоположение"
+    "location":"Наше местоположение",
+    "projects-title": "Проекты",
+    "filter-all": "Показать все",
+    "filter-kitchens": "Кухни",
+    "filter-doors": "Двери",
+    "filter-stairs": "Лестницы",
+    "filter-cabinets": "Шкафы",
+    "filter-tables": "Столы",
+    "filter-garden-tables": "Садовая мебель",
+    "filter-gazebos": "Беседки",
+    "project-title-1": "Современная кухня",
+    "project-desc-1": "Современный дизайн с использованием качественных материалов.",
+    "modal-title": "Название проекта",
+    "modal-desc": "Дополнительное описание проекта",
+    "contact-btn": "Связаться с нами"
   },
   "ro": {
-    "home": "Acasă",
+    "home": "Principală",
     "project": "Catalog",
     "contact": "Contactează-ne",
     "slider-title-1": "Materiale naturale <br> sustenabile <br> și prietenoase cu mediul",
@@ -195,19 +224,38 @@ const translations = {
     "read_more": "Citește mai mult",
     // Добавленные переводы для секции Featured Products
     "featured-products-title": "Produse Recomandate",
-    "product-1-title": "Masă din lemn masiv",
-    "product-1-description": "Fabricată manual din stejar 100% natural, cu un finisaj elegant.",
-    "product-2-title": "Bibliotecă rustică",
-    "product-2-description": "Design minimalist cu spațiu generos pentru cărți și decorațiuni.",
-    "product-3-title": "Scaun din lemn sculptat",
-    "product-3-description": "Combinația perfectă între tradiție și confort, realizat manual.",
+    "product-1-title": "Masă din lemn",
+    "product-1-description": "Fabricată manual, cu un finisaj elegant.",
+    "product-2-title": "Bucătărie modernă",
+    "product-2-description": "Design minimalist cu spațiu generos.",
+    "product-3-title": "Foișor din lemn",
+    "product-3-description": "Perfect pentru petreceri gălăgioase și băi solare relaxante, realizat manual.",
     "contact-us": "Contactează-ne",
     "follow": "Abonează-te",
-    "location":"Locația noastră"
+    "location":"Locația noastră",
+    "projects-title": "Proiecte",
+    "filter-all": "Arată toate",
+    "filter-kitchens": "Bucătării",
+    "filter-doors": "Uși",
+    "filter-stairs": "Scări de interior",
+    "filter-cabinets": "Dulapuri",
+    "filter-tables": "Mese",
+    "filter-garden-tables": "Mese de grădină",
+    "filter-gazebos": "Foișoare",
+    "project-title-1": "Bucătărie modernă",
+    "project-desc-1": "Design contemporan cu materiale de calitate.",
+    "project-title-2": "Bucătărie modernă",
+    "project-desc-2": "Design contemporan cu materiale de calitate.",
+    "modal-title": "Titlul proiectului",
+    "modal-desc": "Descriere suplimentară a proiectului",
+    "contact-btn": "Contactează-ne"
   }
 };
 
 function changeLanguage(language) {
+  // Сохраняем выбранный язык в localStorage
+  localStorage.setItem('selectedLanguage', language);
+
   // Изменение текста для навигации
   document.getElementById('home').innerText = translations[language]["home"];
   document.getElementById('project').innerText = translations[language]["project"];
@@ -256,15 +304,42 @@ function changeLanguage(language) {
   document.getElementById('product-3-title').textContent = translations[language]["product-3-title"];
   document.getElementById('product-3-description').textContent = translations[language]["product-3-description"];
 
+  document.getElementById('projects-title').innerText = translations[language]["projects-title"];
+  document.getElementById('filter-all').innerText = translations[language]["filter-all"];
+  document.getElementById('filter-kitchens').innerText = translations[language]["filter-kitchens"];
+  document.getElementById('filter-doors').innerText = translations[language]["filter-doors"];
+  document.getElementById('filter-stairs').innerText = translations[language]["filter-stairs"];
+  document.getElementById('filter-cabinets').innerText = translations[language]["filter-cabinets"];
+  document.getElementById('filter-tables').innerText = translations[language]["filter-tables"];
+  document.getElementById('filter-garden-tables').innerText = translations[language]["filter-garden-tables"];
+  document.getElementById('filter-gazebos').innerText = translations[language]["filter-gazebos"];
+  document.getElementById('project-title-1').innerText = translations[language]["project-title-1"];
+  document.getElementById('project-desc-1').innerText = translations[language]["project-desc-1"];
+  document.getElementById('modal-title').innerText = translations[language]["modal-title"];
+  document.getElementById('modal-desc').innerText = translations[language]["modal-desc"];
+  document.getElementById('contact-btn').innerText = translations[language]["contact-btn"];
+
   document.getElementById('contact-us').textContent = translations[language]["contact-us"];
   document.getElementById('location').textContent = translations[language]["location"];
   document.getElementById('follow').textContent = translations[language]["follow"];
+
+// Обновляем состояние переключателя языка
+const languageImages = document.querySelectorAll('.language-selector img');
+  languageImages.forEach(img => {
+    if (img.getAttribute('onclick').includes(`'${language}'`)) {
+      img.classList.add('active');
+    } else {
+      img.classList.remove('active');
+    }
+  });
 }
 
-// Устанавливаем язык по умолчанию
-changeLanguage('ro');
-
-  </script>
+// При загрузке страницы проверяем сохраненный язык
+window.onload = function() {
+  const savedLanguage = localStorage.getItem('selectedLanguage') || 'ro'; // По умолчанию румынский
+  changeLanguage(savedLanguage);
+};
+</script>
 </body>
 </div>    
     <!-- end header section -->
@@ -402,467 +477,462 @@ changeLanguage('ro');
   </div>
 </div>
 
-
 <!-- Proiecte -->
 <section class="project_section layout_padding">
   <div class="container">
     <div class="heading_container">
-      <h2>Proiecte</h2>
+      <h2 id="projects-title">Proiecte</h2> <!-- Добавлен id -->
     </div>
 
     <!-- Filter Buttons -->
     <div class="filter_box" id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')" aria-label="Show all projects">Arată toate</button>
-      <button class="btn" onclick="filterSelection('bucatarii')" aria-label="Filter by kitchens">Bucătării</button>
-      <button class="btn" onclick="filterSelection('usi')" aria-label="Filter by doors">Uși</button>
-      <button class="btn" onclick="filterSelection('scari')" aria-label="Filter by stairs">Scări de interior</button>
-      <button class="btn" onclick="filterSelection('dulapuri')" aria-label="Filter by cabinets">Dulapuri</button>
-      <button class="btn" onclick="filterSelection('mese')" aria-label="Filter by tables">Mese</button>
-      <button class="btn" onclick="filterSelection('gradina')" aria-label="Filter by garden tables">Mese de grădină</button>
-      <button class="btn" onclick="filterSelection('foisoare')" aria-label="Filter by gazebos">Foișoare</button>
+      <button class="btn active" onclick="filterSelection('all')" aria-label="Show all projects" id="filter-all">Arată toate</button>
+      <button class="btn" onclick="filterSelection('bucatarii')" aria-label="Filter by kitchens" id="filter-kitchens">Bucătării</button>
+      <button class="btn" onclick="filterSelection('usi')" aria-label="Filter by doors" id="filter-doors">Uși</button>
+      <button class="btn" onclick="filterSelection('scari')" aria-label="Filter by stairs" id="filter-stairs">Scări de interior</button>
+      <button class="btn" onclick="filterSelection('dulapuri')" aria-label="Filter by cabinets" id="filter-cabinets">Dulapuri</button>
+      <button class="btn" onclick="filterSelection('mese')" aria-label="Filter by tables" id="filter-tables">Mese</button>
+      <button class="btn" onclick="filterSelection('gradina')" aria-label="Filter by garden tables" id="filter-garden-tables">Mese de grădină</button>
+      <button class="btn" onclick="filterSelection('foisoare')" aria-label="Filter by gazebos" id="filter-gazebos">Foișoare</button>
     </div>
 
-    <!-- Project Grid -->
-    <div class="project-container">
-      
-      <!-- Bucătării -->
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b1.jpg" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+  <!-- Project Grid -->
+  <div class="project-container">
+    <!-- Bucătării -->
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b1.jpg" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-1">Bucătărie modernă</h3>
+          <p id="project-desc-1">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b2.jpg" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b2.jpg" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-2">Bucătărie modernă</h3>
+          <p id="project-desc-2">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b3.jpg" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b3.jpg" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-3">Bucătărie modernă</h3>
+          <p id="project-desc-3">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b4.jpg" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b4.jpg" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-4">Bucătărie modernă</h3>
+          <p id="project-desc-4">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b5.jpg" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b5.jpg" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-5">Bucătărie modernă</h3>
+          <p id="project-desc-5">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b6.png" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b6.png" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-6">Bucătărie modernă</h3>
+          <p id="project-desc-6">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b7.png" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b7.png" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-7">Bucătărie modernă</h3>
+          <p id="project-desc-7">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b8.jpg" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b8.jpg" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-8">Bucătărie modernă</h3>
+          <p id="project-desc-8">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
-      <div class="filterDiv bucatarii show">
-        <div class="project-card">
-          <img src="images/bucatarii/b9.jpg" alt="Bucătărie modernă">
-          <div class="project-info">
-            <h3>Bucătărie modernă</h3>
-            <p>Design contemporan cu materiale de calitate.</p>
-          </div>
+    </div>
+    <div class="filterDiv bucatarii show">
+      <div class="project-card">
+        <img src="images/bucatarii/b9.jpg" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-9">Bucătărie modernă</h3>
+          <p id="project-desc-9">Design contemporan cu materiale de calitate.</p>
         </div>
       </div>
+    </div>
 
-      <!-- Uși -->
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u1.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    <!-- Uși -->
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u1.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-10">Ușă din lemn masiv</h3>
+          <p id="project-desc-10">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u2.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u2.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-11">Ușă din lemn masiv</h3>
+          <p id="project-desc-11">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u3.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u3.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-12">Ușă din lemn masiv</h3>
+          <p id="project-desc-12">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u4.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u4.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-13">Ușă din lemn masiv</h3>
+          <p id="project-desc-13">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u5.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u5.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-14">Ușă din lemn masiv</h3>
+          <p id="project-desc-14">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u6.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u6.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-15">Ușă din lemn masiv</h3>
+          <p id="project-desc-15">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u7.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u7.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-16">Ușă din lemn masiv</h3>
+          <p id="project-desc-16">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u8.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u8.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-17">Ușă din lemn masiv</h3>
+          <p id="project-desc-17">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u9.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u9.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-18">Ușă din lemn masiv</h3>
+          <p id="project-desc-18">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
-      <div class="filterDiv usi">
-        <div class="project-card-u">
-          <img src="images/usi/u10.png" alt="Ușă din lemn masiv">
-          <div class="project-info">
-            <h3>Ușă din lemn masiv</h3>
-            <p>Ideală pentru un interior elegant și durabil.</p>
-          </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u10.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-19">Ușă din lemn masiv</h3>
+          <p id="project-desc-19">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
+    </div>
 
-      <!-- Scări de interior -->
-      <div class="filterDiv scari">
-        <div class="project-card-u">
-          <img src="images/scari/s1-removebg-preview.png" alt="Scară din lemn masiv">
-          <div class="project-info">
-            <h3>Scară din lemn masiv</h3>
-            <p>Durabilă și estetică, potrivită pentru orice locuință.</p>
-          </div>
+    <!-- Scări de interior -->
+    <div class="filterDiv scari">
+      <div class="project-card-u">
+        <img src="images/scari/s1-removebg-preview.png" alt="Scară din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-20">Scară din lemn masiv</h3>
+          <p id="project-desc-20">Durabilă și estetică, potrivită pentru orice locuință.</p>
         </div>
       </div>
-      <div class="filterDiv scari">
-        <div class="project-card-u">
-          <img src="images/scari/s2-removebg-preview.png" alt="Scară din lemn masiv">
-          <div class="project-info">
-            <h3>Scară din lemn masiv</h3>
-            <p>Durabilă și estetică, potrivită pentru orice locuință.</p>
-          </div>
+    </div>
+    <div class="filterDiv scari">
+      <div class="project-card-u">
+        <img src="images/scari/s2-removebg-preview.png" alt="Scară din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-21">Scară din lemn masiv</h3>
+          <p id="project-desc-21">Durabilă și estetică, potrivită pentru orice locuință.</p>
         </div>
       </div>
-      <div class="filterDiv scari">
-        <div class="project-card-u">
-          <img src="images/scari/s4-removebg-preview.png" alt="Scară din lemn masiv">
-          <div class="project-info">
-            <h3>Scară din lemn masiv</h3>
-            <p>Durabilă și estetică, potrivită pentru orice locuință.</p>
-          </div>
+    </div>
+    <div class="filterDiv scari">
+      <div class="project-card-u">
+        <img src="images/scari/s4-removebg-preview.png" alt="Scară din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-22">Scară din lemn masiv</h3>
+          <p id="project-desc-22">Durabilă și estetică, potrivită pentru orice locuință.</p>
         </div>
       </div>
+    </div>
 
-      <!-- Dulapuri -->
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d1-removebg-preview.png" alt="Dulap din lemn de stejar">
-          <div class="project-info">
-            <h3>Dulap din lemn de stejar</h3>
-            <p>Robust și elegant, perfect pentru orice cameră.</p>
-          </div>
+    <!-- Dulapuri -->
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d1-removebg-preview.png" alt="Dulap din lemn de stejar">
+        <div class="project-info">
+          <h3 id="project-title-23">Dulap din lemn de stejar</h3>
+          <p id="project-desc-23">Robust și elegant, perfect pentru orice cameră.</p>
         </div>
       </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d2-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-24">Dulap cu 4 uși</h3>
+          <p id="project-desc-24">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d3-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-25">Dulap cu 4 uși</h3>
+          <p id="project-desc-25">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d4-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-26">Dulap cu 4 uși</h3>
+          <p id="project-desc-26">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d5-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-27">Dulap cu 4 uși</h3>
+          <p id="project-desc-27">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d6-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-28">Dulap cu 4 uși</h3>
+          <p id="project-desc-28">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d7-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-29">Dulap cu 4 uși</h3>
+          <p id="project-desc-29">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d8-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-30">Dulap cu 4 uși</h3>
+          <p id="project-desc-30">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d9-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-31">Dulap cu 4 uși</h3>
+          <p id="project-desc-31">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d10-removebg-preview.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-32">Dulap cu 4 uși</h3>
+          <p id="project-desc-32">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
 
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d2-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    <!-- Mese -->
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m1.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-33">Masă din lemn masiv</h3>
+          <p id="project-desc-33">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d3-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    </div>
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m8.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-34">Masă din lemn masiv</h3>
+          <p id="project-desc-34">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d4-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    </div>
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m3.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-35">Masă din lemn masiv</h3>
+          <p id="project-desc-35">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d5-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    </div>
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m4.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-36">Masă din lemn masiv</h3>
+          <p id="project-desc-36">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d6-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    </div>
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m5.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-37">Masă din lemn masiv</h3>
+          <p id="project-desc-37">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d7-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    </div>
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m6.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-38">Masă din lemn masiv</h3>
+          <p id="project-desc-38">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d8-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    </div>
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m7.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-39">Masă din lemn masiv</h3>
+          <p id="project-desc-39">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d9-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
+    </div>
+    <div class="filterDiv mese">
+      <div class="project-card-u">
+        <img src="images/mese/m9.png" alt="Masă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-40">Masă din lemn masiv</h3>
+          <p id="project-desc-40">Design elegant și rezistent.</p>
         </div>
       </div>
-      <div class="filterDiv dulapuri">
-        <div class="project-card-u">
-          <img src="images/dulapuri/d10-removebg-preview.png" alt="Dulap cu 4 uși">
-          <div class="project-info">
-            <h3>Dulap cu 4 uși</h3>
-            <p>Pentru un depozit perfect organizat.</p>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <!-- Mese -->
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m1.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
+    <!-- Mese de grădină -->
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g1.png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-41">Masă de grădină</h3>
+          <p id="project-desc-41">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m8.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g2.png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-42">Masă de grădină</h3>
+          <p id="project-desc-42">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m3.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g3.png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-43">Masă de grădină</h3>
+          <p id="project-desc-43">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m4.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g4.png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-44">Masă de grădină</h3>
+          <p id="project-desc-44">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m5.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g5.png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-45">Masă de grădină</h3>
+          <p id="project-desc-45">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m6.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
-        </div>
-      </div>
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m7.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
-        </div>
-      </div>
-      <div class="filterDiv mese">
-        <div class="project-card-u">
-          <img src="images/mese/m9.png" alt="Masă din lemn masiv">
-          <div class="project-info">
-            <h3>Masă din lemn masiv</h3>
-            <p>Design elegant și rezistent.</p>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <!-- Mese de grădină -->
-      <div class="filterDiv gradina">
-        <div class="project-card-u">
-          <img src="images/gradina/g1.png" alt="Masă de grădină">
-          <div class="project-info">
-            <h3>Masă de grădină</h3>
-            <p>Perfectă pentru exterior, rezistentă la intemperii.</p>
-          </div>
+    <!-- Foișoare -->
+    <div class="filterDiv foisoare">
+      <div class="project-card-u">
+        <img src="images/foisoare/f1.png" alt="Foișor rustic">
+        <div class="project-info">
+          <h3 id="project-title-46">Foișor rustic</h3>
+          <p id="project-desc-46">Un loc ideal pentru relaxare în aer liber.</p>
         </div>
       </div>
-      <div class="filterDiv gradina">
-        <div class="project-card-u">
-          <img src="images/gradina/g2.png" alt="Masă de grădină">
-          <div class="project-info">
-            <h3>Masă de grădină</h3>
-            <p>Perfectă pentru exterior, rezistentă la intemperii.</p>
-          </div>
+    </div>
+    <div class="filterDiv foisoare">
+      <div class="project-card-u">
+        <img src="images/foisoare/f2.png" alt="Foișor rustic">
+        <div class="project-info">
+          <h3 id="project-title-47">Foișor rustic</h3>
+          <p id="project-desc-47">Un loc ideal pentru relaxare în aer liber.</p>
         </div>
       </div>
-      <div class="filterDiv gradina">
-        <div class="project-card-u">
-          <img src="images/gradina/g3.png" alt="Masă de grădină">
-          <div class="project-info">
-            <h3>Masă de grădină</h3>
-            <p>Perfectă pentru exterior, rezistentă la intemperii.</p>
-          </div>
-        </div>
-      </div>
-      <div class="filterDiv gradina">
-        <div class="project-card-u">
-          <img src="images/gradina/g4.png" alt="Masă de grădină">
-          <div class="project-info">
-            <h3>Masă de grădină</h3>
-            <p>Perfectă pentru exterior, rezistentă la intemperii.</p>
-          </div>
-        </div>
-      </div>
-      <div class="filterDiv gradina">
-        <div class="project-card-u">
-          <img src="images/gradina/g5.png" alt="Masă de grădină">
-          <div class="project-info">
-            <h3>Masă de grădină</h3>
-            <p>Perfectă pentru exterior, rezistentă la intemperii.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Foișoare -->
-      <div class="filterDiv foisoare">
-        <div class="project-card-u">
-          <img src="images/foisoare/f1.png" alt="Foișor rustic">
-          <div class="project-info">
-            <h3>Foișor rustic</h3>
-            <p>Un loc ideal pentru relaxare în aer liber.</p>
-          </div>
-        </div>
-      </div>
-      <div class="filterDiv foisoare">
-        <div class="project-card-u">
-          <img src="images/foisoare/f2.png" alt="Foișor rustic">
-          <div class="project-info">
-            <h3>Foișor rustic</h3>
-            <p>Un loc ideal pentru relaxare în aer liber.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -872,27 +942,24 @@ changeLanguage('ro');
     <h2 class="section-title" id="featured-products-title">Produse Recomandate</h2>
     <div class="products-grid">
       <div class="product">
-        <img src="images/product1.jpg" alt="Masă din lemn masiv">
-        <h3 id="product-1-title">Masă din lemn masiv</h3>
-        <p id="product-1-description">Fabricată manual din stejar 100% natural, cu un finisaj elegant.</p>
+        <img src="images/mese/m4.png" alt="Masă din lemn masiv">
+        <h3 id="product-1-title">Masă din lemn</h3>
+        <p id="product-1-description">Fabricată manual, cu un finisaj elegant.</p>
       </div>
       <div class="product">
-        <img src="images/product2.jpg" alt="Bibliotecă rustică">
-        <h3 id="product-2-title">Bibliotecă rustică</h3>
-        <p id="product-2-description">Design minimalist cu spațiu generos pentru cărți și decorațiuni.</p>
+        <img src="images/bucatarii/b5.jpg" alt="Bibliotecă rustică">
+        <h3 id="product-2-title">Bucătărie modernă</h3>
+        <p id="product-2-description">Design minimalist cu spațiu generos.</p>
       </div>
       <div class="product">
-        <img src="images/product3.jpg" alt="Scaun din lemn sculptat">
-        <h3 id="product-3-title">Scaun din lemn sculptat</h3>
-        <p id="product-3-description">Combinația perfectă între tradiție și confort, realizat manual.</p>
+        <img src="images/foisoare/f1.png" alt="Scaun din lemn sculptat">
+        <h3 id="product-3-title">Foișor din lemn</h3>
+        <p id="product-3-description">Perfect pentru petreceri gălăgioase și băi solare relaxante, realizat manual.</p>
       </div>
     </div>
   </div>
 </section>
 <!-- Sfârșit Produse Recomandate -->
-
-
-
 
  <!-- why us section -->
 <section class="why_us_section layout_padding">

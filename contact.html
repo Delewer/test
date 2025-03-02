@@ -80,6 +80,7 @@
   </div>
 
   <script>
+
     const translations = {
       "en": {
         "home": "Home",
@@ -164,7 +165,7 @@
         "location":"Наше местоположение"
       },
       "ro": {
-        "home": "Acasă",
+        "home": "Principală",
         "project": "Catalog",
         "contact": "Contactează-ne",
         "slider-title-1": "Materiale naturale <br> sustenabile <br> și prietenoase cu mediul",
@@ -207,6 +208,9 @@
     };
     
     function changeLanguage(language) {
+      // Сохраняем выбранный язык в localStorage
+      localStorage.setItem('selectedLanguage', language);
+    
       // Изменение текста для навигации
       document.getElementById('home').innerText = translations[language]["home"];
       document.getElementById('project').innerText = translations[language]["project"];
@@ -258,12 +262,24 @@
       document.getElementById('contact-us').textContent = translations[language]["contact-us"];
       document.getElementById('location').textContent = translations[language]["location"];
       document.getElementById('follow').textContent = translations[language]["follow"];
+    
+    // Обновляем состояние переключателя языка
+    const languageImages = document.querySelectorAll('.language-selector img');
+      languageImages.forEach(img => {
+        if (img.getAttribute('onclick').includes(`'${language}'`)) {
+          img.classList.add('active');
+        } else {
+          img.classList.remove('active');
+        }
+      });
     }
     
-    // Устанавливаем язык по умолчанию
-    changeLanguage('ro');
-    
-      </script>
+    // При загрузке страницы проверяем сохраненный язык
+    window.onload = function() {
+      const savedLanguage = localStorage.getItem('selectedLanguage') || 'ro'; // По умолчанию румынский
+      changeLanguage(savedLanguage);
+    };
+    </script>
 </body>
 
 
