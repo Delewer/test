@@ -1,22 +1,23 @@
 <?php
 header('Content-Type: application/json');
 
-// Разрешаем только POST-запросы
+// Проверяем метод запроса
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
-    echo json_encode(['error' => 'Method not allowed. Use POST.']);
+    echo json_encode(['error' => 'Метод не разрешен. Используйте POST.']);
     exit;
 }
 
-// Получаем данные из запроса
+// Получаем данные из формы
 $data = json_decode(file_get_contents('php://input'), true);
 
-// Очищаем и проверяем поля
+// Очищаем и проверяем данные
 $name = isset($data['name']) ? trim($data['name']) : '';
 $phone = isset($data['phone']) ? trim($data['phone']) : '';
 $email = isset($data['email']) ? trim($data['email']) : '';
 $message = isset($data['message']) ? trim($data['message']) : '';
 
+// Валидация данных
 if (empty($name) || empty($email) || empty($message)) {
     echo json_encode(['error' => 'Заполните все обязательные поля.']);
     exit;
@@ -27,7 +28,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// Email-настройки
+// Настройки для отправки письма
 $to = 'andugd67@gmail.com'; // Укажите ваш email
 $subject = "Новое сообщение от $name";
 $body = "Имя: $name\nТелефон: $phone\nEmail: $email\nСообщение: $message";

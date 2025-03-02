@@ -283,14 +283,14 @@
 </body>
 
 
-<!-- contact section -->
+<!-- Contact Section -->
 <section class="contact_section layout_padding">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-5 col-md-6 offset-md-1">
         <div class="heading_container">
-          <h2>Get in Touch</h2>
-          <p>We're here to help! Drop us a message below.</p>
+          <h2>Свяжитесь с нами</h2>
+          <p>Мы здесь, чтобы помочь! Оставьте нам сообщение ниже.</p>
         </div>
         <div class="form_container">
           <form id="contactForm" onsubmit="submitForm(event)" method="post">
@@ -298,7 +298,7 @@
               <input type="text" id="name" name="name" placeholder="Ваше имя" required />
             </div>
             <div class="form-group">
-              <input type="tel" id="phone" name="phone" placeholder="Телефон (необязательно)" pattern="[0-9]{10,}" />
+              <input type="tel" id="phone" name="phone" placeholder="Телефон (необязательно)" />
             </div>
             <div class="form-group">
               <input type="email" id="email" name="email" placeholder="Ваш Email" required />
@@ -311,9 +311,7 @@
             </div>
             <div id="formMessage" class="form-message"></div>
           </form>
-        </div>        
-        <!-- Добавлено место для вывода координат -->
-        <div id="coordinates" style="margin-top: 10px; color: #333;"></div>
+        </div>
       </div>
       <div class="col-lg-6 col-md-5 px-0">
         <div class="map_container">
@@ -325,7 +323,7 @@
     </div>
   </div>
 </section>
-<!-- end contact section -->
+<!-- End Contact Section -->
 
 <!-- Подключение HERE Maps API -->
 <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
@@ -398,16 +396,14 @@
   window.onload = function () {
     initializeHereMap();
   };
-</script>
 
-<script>
   function submitForm(event) {
-    event.preventDefault();
-    
+    event.preventDefault(); // Отменяем стандартное поведение формы
+
     const form = document.getElementById('contactForm');
     const formMessage = document.getElementById('formMessage');
-    
-    // Собираем данные формы
+
+    // Собираем данные из формы
     const formData = {
       name: document.getElementById('name').value.trim(),
       phone: document.getElementById('phone').value.trim(),
@@ -416,7 +412,7 @@
     };
 
     // Отправляем данные на сервер
-    fetch('contact-backend\\contact.php', {
+    fetch('contact.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -426,18 +422,22 @@
     })
       .then(response => response.json()) // Преобразуем ответ в JSON
       .then(data => {
-        formMessage.textContent = data.error || data.message;
-        formMessage.style.color = data.error ? '#bc570d' : '#165B33';
-        if (!data.error) form.reset(); // Очищаем форму при успешной отправке
+        if (data.error) {
+          formMessage.textContent = data.error;
+          formMessage.style.color = '#bc570d'; // Красный цвет для ошибки
+        } else {
+          formMessage.textContent = data.message;
+          formMessage.style.color = '#165B33'; // Зеленый цвет для успеха
+          form.reset(); // Очищаем форму
+        }
       })
       .catch(error => {
-        console.error('Ошибка запроса:', error);
+        console.error('Ошибка:', error);
         formMessage.textContent = 'Ошибка соединения с сервером. Попробуйте позже.';
         formMessage.style.color = '#bc570d';
       });
   }
 </script>
-
 
 <!-- Footer Section -->
 <footer class="footer_section">
