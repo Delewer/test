@@ -293,7 +293,7 @@
           <p>Мы здесь, чтобы помочь! Оставьте нам сообщение ниже.</p>
         </div>
         <div class="form_container">
-          <form id="contactForm" onsubmit="submitForm(event)" method="post">
+          <form id="contactForm" action="https://formspree.io/f/xdkaqdpj" method="POST">
             <div class="form-group">
               <input type="text" id="name" name="name" placeholder="Ваше имя" required />
             </div>
@@ -397,46 +397,42 @@
     initializeHereMap();
   };
 
-  function submitForm(event) {
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', async (event) => {
     event.preventDefault(); // Отменяем стандартное поведение формы
 
-    const form = document.getElementById('contactForm');
-    const formMessage = document.getElementById('formMessage');
+    const formData = new FormData(form);
 
-    // Собираем данные из формы
-    const formData = {
-      name: document.getElementById('name').value.trim(),
-      phone: document.getElementById('phone').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      message: document.getElementById('message').value.trim()
-    };
-
-    // Отправляем данные на сервер
-    fetch('contact.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(response => response.json()) // Преобразуем ответ в JSON
-      .then(data => {
-        if (data.error) {
-          formMessage.textContent = data.error;
-          formMessage.style.color = '#bc570d'; // Красный цвет для ошибки
-        } else {
-          formMessage.textContent = data.message;
-          formMessage.style.color = '#165B33'; // Зеленый цвет для успеха
-          form.reset(); // Очищаем форму
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
         }
-      })
-      .catch(error => {
-        console.error('Ошибка:', error);
-        formMessage.textContent = 'Ошибка соединения с сервером. Попробуйте позже.';
-        formMessage.style.color = '#bc570d';
       });
-  }
+
+      if (response.ok) {
+        formMessage.textContent = 'Спасибо! Мы свяжемся с вами в ближайшее время.';
+        formMessage.style.color = '#165B33'; // Зеленый цвет для успеха
+        form.reset(); // Очищаем форму
+      } else {
+        const data = await response.json();
+        if (data.errors) {
+          formMessage.textContent = data.errors.map(error => error.message).join(', ');
+        } else {
+          formMessage.textContent = 'Ошибка отправки. Попробуйте позже.';
+        }
+        formMessage.style.color = '#bc570d'; // Красный цвет для ошибки
+      }
+    } catch (error) {
+      console.error('Ошибка:', error);
+      formMessage.textContent = 'Ошибка соединения с сервером. Попробуйте позже.';
+      formMessage.style.color = '#bc570d';
+    }
+  });
 </script>
 
 <!-- Footer Section -->
