@@ -488,12 +488,14 @@ window.onload = function() {
     <div class="filter_box" id="myBtnContainer">
       <button class="btn active" onclick="filterSelection('all')" aria-label="Show all projects" id="filter-all">Arată toate</button>
       <button class="btn" onclick="filterSelection('bucatarii')" aria-label="Filter by kitchens" id="filter-kitchens">Bucătării</button>
+      <button class="btn" onclick="filterSelection('paturi')" aria-label="Filter by paturi" id="filter-paturi">Paturi</button>
       <button class="btn" onclick="filterSelection('usi')" aria-label="Filter by doors" id="filter-doors">Uși</button>
       <button class="btn" onclick="filterSelection('scari')" aria-label="Filter by stairs" id="filter-stairs">Scări de interior</button>
       <button class="btn" onclick="filterSelection('dulapuri')" aria-label="Filter by cabinets" id="filter-cabinets">Dulapuri</button>
       <button class="btn" onclick="filterSelection('mese')" aria-label="Filter by tables" id="filter-tables">Mese</button>
       <button class="btn" onclick="filterSelection('gradina')" aria-label="Filter by garden tables" id="filter-garden-tables">Mese de grădină</button>
       <button class="btn" onclick="filterSelection('foisoare')" aria-label="Filter by gazebos" id="filter-gazebos">Foișoare</button>
+      <button class="btn" onclick="filterSelection('diferite')" aria-label="Filter by other" id="filter-other">Diferite</button>
     </div>
 
   <!-- Project Grid -->
@@ -508,7 +510,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b2.jpg" alt="Bucătărie modernă">
         <div class="project-info">
@@ -517,7 +519,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b3.jpg" alt="Bucătărie modernă">
         <div class="project-info">
@@ -526,7 +528,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b4.jpg" alt="Bucătărie modernă">
         <div class="project-info">
@@ -535,7 +537,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b5.jpg" alt="Bucătărie modernă">
         <div class="project-info">
@@ -544,7 +546,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b6.png" alt="Bucătărie modernă">
         <div class="project-info">
@@ -553,7 +555,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b7.png" alt="Bucătărie modernă">
         <div class="project-info">
@@ -562,7 +564,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b8.jpg" alt="Bucătărie modernă">
         <div class="project-info">
@@ -571,7 +573,7 @@ window.onload = function() {
         </div>
       </div>
     </div>
-    <div class="filterDiv bucatarii show">
+    <div class="filterDiv bucatarii">
       <div class="project-card">
         <img src="images/bucatarii/b9.jpg" alt="Bucătărie modernă">
         <div class="project-info">
@@ -581,46 +583,48 @@ window.onload = function() {
       </div>
     </div>
 
+    <!-- Paturi -->
+    <div class="filterDiv paturi show">
+      <div class="project-card-u">
+        <img src="images/paturi/pat (1).png" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-10">Pat</h3>
+          <p id="project-desc-10">Design contemporan cu materiale de calitate.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv paturi">
+      <div class="project-card-u">
+        <img src="images/paturi/pat (2).png" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-11">Pat</h3>
+          <p id="project-desc-11">Design contemporan cu materiale de calitate.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv paturi">
+      <div class="project-card-u">
+        <img src="images/paturi/pat (3).png" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-12">Pat</h3>
+          <p id="project-desc-12">Design contemporan cu materiale de calitate.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv paturi">
+      <div class="project-card-u">
+        <img src="images/paturi/pat (4).png" alt="Bucătărie modernă">
+        <div class="project-info">
+          <h3 id="project-title-13">Pat</h3>
+          <p id="project-desc-13">Design contemporan cu materiale de calitate.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- Uși -->
     <div class="filterDiv usi">
       <div class="project-card-u">
         <img src="images/usi/u1.png" alt="Ușă din lemn masiv">
-        <div class="project-info">
-          <h3 id="project-title-10">Ușă din lemn masiv</h3>
-          <p id="project-desc-10">Ideală pentru un interior elegant și durabil.</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv usi">
-      <div class="project-card-u">
-        <img src="images/usi/u2.png" alt="Ușă din lemn masiv">
-        <div class="project-info">
-          <h3 id="project-title-11">Ușă din lemn masiv</h3>
-          <p id="project-desc-11">Ideală pentru un interior elegant și durabil.</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv usi">
-      <div class="project-card-u">
-        <img src="images/usi/u3.png" alt="Ușă din lemn masiv">
-        <div class="project-info">
-          <h3 id="project-title-12">Ușă din lemn masiv</h3>
-          <p id="project-desc-12">Ideală pentru un interior elegant și durabil.</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv usi">
-      <div class="project-card-u">
-        <img src="images/usi/u4.png" alt="Ușă din lemn masiv">
-        <div class="project-info">
-          <h3 id="project-title-13">Ușă din lemn masiv</h3>
-          <p id="project-desc-13">Ideală pentru un interior elegant și durabil.</p>
-        </div>
-      </div>
-    </div>
-    <div class="filterDiv usi">
-      <div class="project-card-u">
-        <img src="images/usi/u5.png" alt="Ușă din lemn masiv">
         <div class="project-info">
           <h3 id="project-title-14">Ușă din lemn masiv</h3>
           <p id="project-desc-14">Ideală pentru un interior elegant și durabil.</p>
@@ -629,16 +633,16 @@ window.onload = function() {
     </div>
     <div class="filterDiv usi">
       <div class="project-card-u">
-        <img src="images/usi/u6.png" alt="Ușă din lemn masiv">
+        <img src="images/usi/u2.png" alt="Ușă din lemn masiv">
         <div class="project-info">
           <h3 id="project-title-15">Ușă din lemn masiv</h3>
           <p id="project-desc-15">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
     </div>
-    <div class="filterDiv usi">
+    <div class="filterDiv usi show">
       <div class="project-card-u">
-        <img src="images/usi/u7.png" alt="Ușă din lemn masiv">
+        <img src="images/usi/u3.png" alt="Ușă din lemn masiv">
         <div class="project-info">
           <h3 id="project-title-16">Ușă din lemn masiv</h3>
           <p id="project-desc-16">Ideală pentru un interior elegant și durabil.</p>
@@ -647,7 +651,7 @@ window.onload = function() {
     </div>
     <div class="filterDiv usi">
       <div class="project-card-u">
-        <img src="images/usi/u8.png" alt="Ușă din lemn masiv">
+        <img src="images/usi/u4.png" alt="Ușă din lemn masiv">
         <div class="project-info">
           <h3 id="project-title-17">Ușă din lemn masiv</h3>
           <p id="project-desc-17">Ideală pentru un interior elegant și durabil.</p>
@@ -656,7 +660,7 @@ window.onload = function() {
     </div>
     <div class="filterDiv usi">
       <div class="project-card-u">
-        <img src="images/usi/u9.png" alt="Ușă din lemn masiv">
+        <img src="images/usi/u5.png" alt="Ușă din lemn masiv">
         <div class="project-info">
           <h3 id="project-title-18">Ușă din lemn masiv</h3>
           <p id="project-desc-18">Ideală pentru un interior elegant și durabil.</p>
@@ -665,10 +669,91 @@ window.onload = function() {
     </div>
     <div class="filterDiv usi">
       <div class="project-card-u">
-        <img src="images/usi/u10.png" alt="Ușă din lemn masiv">
+        <img src="images/usi/u6.png" alt="Ușă din lemn masiv">
         <div class="project-info">
           <h3 id="project-title-19">Ușă din lemn masiv</h3>
           <p id="project-desc-19">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u7.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-20">Ușă din lemn masiv</h3>
+          <p id="project-desc-20">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u8.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-21">Ușă din lemn masiv</h3>
+          <p id="project-desc-21">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u9.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-22">Ușă din lemn masiv</h3>
+          <p id="project-desc-22">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u10.png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-23">Ușă din lemn masiv</h3>
+          <p id="project-desc-23">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u11 (1).png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-24">Ușă din lemn masiv</h3>
+          <p id="project-desc-24">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u11 (2).png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-25">Ușă din lemn masiv</h3>
+          <p id="project-desc-25">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u11 (3).png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-26">Ușă din lemn masiv</h3>
+          <p id="project-desc-26">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u11 (4).png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-27">Ușă din lemn masiv</h3>
+          <p id="project-desc-27">Ideală pentru un interior elegant și durabil.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv usi">
+      <div class="project-card-u">
+        <img src="images/usi/u11 (5).png" alt="Ușă din lemn masiv">
+        <div class="project-info">
+          <h3 id="project-title-28">Ușă din lemn masiv</h3>
+          <p id="project-desc-28">Ideală pentru un interior elegant și durabil.</p>
         </div>
       </div>
     </div>
@@ -678,8 +763,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/scari/s1-removebg-preview.png" alt="Scară din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-20">Scară din lemn masiv</h3>
-          <p id="project-desc-20">Durabilă și estetică, potrivită pentru orice locuință.</p>
+          <h3 id="project-title-29">Scară din lemn masiv</h3>
+          <p id="project-desc-29">Durabilă și estetică, potrivită pentru orice locuință.</p>
         </div>
       </div>
     </div>
@@ -687,8 +772,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/scari/s2-removebg-preview.png" alt="Scară din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-21">Scară din lemn masiv</h3>
-          <p id="project-desc-21">Durabilă și estetică, potrivită pentru orice locuință.</p>
+          <h3 id="project-title-30">Scară din lemn masiv</h3>
+          <p id="project-desc-30">Durabilă și estetică, potrivită pentru orice locuință.</p>
         </div>
       </div>
     </div>
@@ -696,8 +781,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/scari/s4-removebg-preview.png" alt="Scară din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-22">Scară din lemn masiv</h3>
-          <p id="project-desc-22">Durabilă și estetică, potrivită pentru orice locuință.</p>
+          <h3 id="project-title-31">Scară din lemn masiv</h3>
+          <p id="project-desc-31">Durabilă și estetică, potrivită pentru orice locuință.</p>
         </div>
       </div>
     </div>
@@ -707,17 +792,17 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d1-removebg-preview.png" alt="Dulap din lemn de stejar">
         <div class="project-info">
-          <h3 id="project-title-23">Dulap din lemn de stejar</h3>
-          <p id="project-desc-23">Robust și elegant, perfect pentru orice cameră.</p>
+          <h3 id="project-title-32">Dulap din lemn de stejar</h3>
+          <p id="project-desc-32">Robust și elegant, perfect pentru orice cameră.</p>
         </div>
       </div>
     </div>
-    <div class="filterDiv dulapuri">
+    <div class="filterDiv dulapuri show">
       <div class="project-card-u">
         <img src="images/dulapuri/d2-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-24">Dulap cu 4 uși</h3>
-          <p id="project-desc-24">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-33">Dulap cu 4 uși</h3>
+          <p id="project-desc-33">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -725,8 +810,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d3-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-25">Dulap cu 4 uși</h3>
-          <p id="project-desc-25">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-34">Dulap cu 4 uși</h3>
+          <p id="project-desc-34">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -734,8 +819,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d4-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-26">Dulap cu 4 uși</h3>
-          <p id="project-desc-26">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-35">Dulap cu 4 uși</h3>
+          <p id="project-desc-35">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -743,8 +828,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d5-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-27">Dulap cu 4 uși</h3>
-          <p id="project-desc-27">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-36">Dulap cu 4 uși</h3>
+          <p id="project-desc-37">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -752,8 +837,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d6-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-28">Dulap cu 4 uși</h3>
-          <p id="project-desc-28">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-38">Dulap cu 4 uși</h3>
+          <p id="project-desc-38">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -761,8 +846,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d7-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-29">Dulap cu 4 uși</h3>
-          <p id="project-desc-29">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-39">Dulap cu 4 uși</h3>
+          <p id="project-desc-39">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -770,8 +855,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d8-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-30">Dulap cu 4 uși</h3>
-          <p id="project-desc-30">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-40">Dulap cu 4 uși</h3>
+          <p id="project-desc-40">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -779,8 +864,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d9-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-31">Dulap cu 4 uși</h3>
-          <p id="project-desc-31">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-41">Dulap cu 4 uși</h3>
+          <p id="project-desc-41">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -788,8 +873,17 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/dulapuri/d10-removebg-preview.png" alt="Dulap cu 4 uși">
         <div class="project-info">
-          <h3 id="project-title-32">Dulap cu 4 uși</h3>
-          <p id="project-desc-32">Pentru un depozit perfect organizat.</p>
+          <h3 id="project-title-42">Dulap cu 4 uși</h3>
+          <p id="project-desc-42">Pentru un depozit perfect organizat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv dulapuri">
+      <div class="project-card-u">
+        <img src="images/dulapuri/d11.png" alt="Dulap cu 4 uși">
+        <div class="project-info">
+          <h3 id="project-title-43">Dulap cu 4 uși</h3>
+          <p id="project-desc-43">Pentru un depozit perfect organizat.</p>
         </div>
       </div>
     </div>
@@ -799,8 +893,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m1.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-33">Masă din lemn masiv</h3>
-          <p id="project-desc-33">Design elegant și rezistent.</p>
+          <h3 id="project-title-44">Masă din lemn masiv</h3>
+          <p id="project-desc-44">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -808,8 +902,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m8.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-34">Masă din lemn masiv</h3>
-          <p id="project-desc-34">Design elegant și rezistent.</p>
+          <h3 id="project-title-45">Masă din lemn masiv</h3>
+          <p id="project-desc-45">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -817,8 +911,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m3.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-35">Masă din lemn masiv</h3>
-          <p id="project-desc-35">Design elegant și rezistent.</p>
+          <h3 id="project-title-46">Masă din lemn masiv</h3>
+          <p id="project-desc-46">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -826,8 +920,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m4.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-36">Masă din lemn masiv</h3>
-          <p id="project-desc-36">Design elegant și rezistent.</p>
+          <h3 id="project-title-47">Masă din lemn masiv</h3>
+          <p id="project-desc-47">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -835,8 +929,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m5.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-37">Masă din lemn masiv</h3>
-          <p id="project-desc-37">Design elegant și rezistent.</p>
+          <h3 id="project-title-48">Masă din lemn masiv</h3>
+          <p id="project-desc-48">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -844,8 +938,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m6.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-38">Masă din lemn masiv</h3>
-          <p id="project-desc-38">Design elegant și rezistent.</p>
+          <h3 id="project-title-49">Masă din lemn masiv</h3>
+          <p id="project-desc-49">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -853,8 +947,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m7.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-39">Masă din lemn masiv</h3>
-          <p id="project-desc-39">Design elegant și rezistent.</p>
+          <h3 id="project-title-50">Masă din lemn masiv</h3>
+          <p id="project-desc-50">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -862,8 +956,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/mese/m9.png" alt="Masă din lemn masiv">
         <div class="project-info">
-          <h3 id="project-title-40">Masă din lemn masiv</h3>
-          <p id="project-desc-40">Design elegant și rezistent.</p>
+          <h3 id="project-title-51">Masă din lemn masiv</h3>
+          <p id="project-desc-51">Design elegant și rezistent.</p>
         </div>
       </div>
     </div>
@@ -873,8 +967,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/gradina/g1.png" alt="Masă de grădină">
         <div class="project-info">
-          <h3 id="project-title-41">Masă de grădină</h3>
-          <p id="project-desc-41">Perfectă pentru exterior, rezistentă la intemperii.</p>
+          <h3 id="project-title-52">Masă de grădină</h3>
+          <p id="project-desc-52">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
     </div>
@@ -882,8 +976,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/gradina/g2.png" alt="Masă de grădină">
         <div class="project-info">
-          <h3 id="project-title-42">Masă de grădină</h3>
-          <p id="project-desc-42">Perfectă pentru exterior, rezistentă la intemperii.</p>
+          <h3 id="project-title-53">Masă de grădină</h3>
+          <p id="project-desc-53">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
     </div>
@@ -891,8 +985,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/gradina/g3.png" alt="Masă de grădină">
         <div class="project-info">
-          <h3 id="project-title-43">Masă de grădină</h3>
-          <p id="project-desc-43">Perfectă pentru exterior, rezistentă la intemperii.</p>
+          <h3 id="project-title-54">Masă de grădină</h3>
+          <p id="project-desc-54">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
     </div>
@@ -900,8 +994,8 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/gradina/g4.png" alt="Masă de grădină">
         <div class="project-info">
-          <h3 id="project-title-44">Masă de grădină</h3>
-          <p id="project-desc-44">Perfectă pentru exterior, rezistentă la intemperii.</p>
+          <h3 id="project-title-55">Masă de grădină</h3>
+          <p id="project-desc-55">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
     </div>
@@ -909,19 +1003,156 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/gradina/g5.png" alt="Masă de grădină">
         <div class="project-info">
-          <h3 id="project-title-45">Masă de grădină</h3>
-          <p id="project-desc-45">Perfectă pentru exterior, rezistentă la intemperii.</p>
+          <h3 id="project-title-56">Masă de grădină</h3>
+          <p id="project-desc-56">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (1).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-57">Masă de grădină</h3>
+          <p id="project-desc-57">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (2).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-58">Masă de grădină</h3>
+          <p id="project-desc-58">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina show">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (3).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-59">Masă de grădină</h3>
+          <p id="project-desc-59">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (4).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-60">Masă de grădină</h3>
+          <p id="project-desc-60">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (5).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-61">Masă de grădină</h3>
+          <p id="project-desc-61">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (6).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-62">Masă de grădină</h3>
+          <p id="project-desc-62">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (7).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-62">Masă de grădină</h3>
+          <p id="project-desc-62">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (8).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-63">Masă de grădină</h3>
+          <p id="project-desc-63">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv gradina">
+      <div class="project-card-u">
+        <img src="images/gradina/g6 (9).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-64">Masă de grădină</h3>
+          <p id="project-desc-64">Perfectă pentru exterior, rezistentă la intemperii.</p>
         </div>
       </div>
     </div>
 
+    <!-- Diferite -->
+    <div class="filterDiv diferite">
+      <div class="project-card-u">
+        <img src="images/diferite/diferite (1).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-65">Decor "Moară"</h3>
+          <p id="project-desc-65">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv diferite">
+      <div class="project-card-u">
+        <img src="images/diferite/diferite (2).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-66">Decor "Fântână"</h3>
+          <p id="project-desc-66">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv diferite">
+      <div class="project-card-u">
+        <img src="images/diferite/diferite (3).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-67">Arcadă pentru evenimente</h3>
+          <p id="project-desc-67">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv diferite">
+      <div class="project-card-u">
+        <img src="images/diferite/diferite (4).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-68">Paravan pentru pubele</h3>
+          <p id="project-desc-68">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv diferite">
+      <div class="project-card-u">
+        <img src="images/diferite/diferite (5).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-69">Panou informativ</h3>
+          <p id="project-desc-69">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv diferite">
+      <div class="project-card-u">
+        <img src="images/diferite/diferite (6).png" alt="Masă de grădină">
+        <div class="project-info">
+          <h3 id="project-title-70">Tumbă</h3>
+          <p id="project-desc-70">Perfectă pentru exterior, rezistentă la intemperii.</p>
+        </div>
+      </div>
+    </div>
+    
     <!-- Foișoare -->
     <div class="filterDiv foisoare">
       <div class="project-card-u">
         <img src="images/foisoare/f1.png" alt="Foișor rustic">
         <div class="project-info">
-          <h3 id="project-title-46">Foișor rustic</h3>
-          <p id="project-desc-46">Un loc ideal pentru relaxare în aer liber.</p>
+          <h3 id="project-title-71">Foișor rustic</h3>
+          <p id="project-desc-71">Un loc ideal pentru relaxare în aer liber.</p>
         </div>
       </div>
     </div>
@@ -929,8 +1160,17 @@ window.onload = function() {
       <div class="project-card-u">
         <img src="images/foisoare/f2.png" alt="Foișor rustic">
         <div class="project-info">
-          <h3 id="project-title-47">Foișor rustic</h3>
-          <p id="project-desc-47">Un loc ideal pentru relaxare în aer liber.</p>
+          <h3 id="project-title-72">Foișor rustic</h3>
+          <p id="project-desc-72">Un loc ideal pentru relaxare în aer liber.</p>
+        </div>
+      </div>
+    </div>
+    <div class="filterDiv foisoare">
+      <div class="project-card-u">
+        <img src="images/foisoare/f3.png" alt="Foișor rustic">
+        <div class="project-info">
+          <h3 id="project-title-73">Foișor rustic</h3>
+          <p id="project-desc-73">Un loc ideal pentru relaxare în aer liber.</p>
         </div>
       </div>
     </div>

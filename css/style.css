@@ -777,9 +777,9 @@ a:focus {
 
 .why_us_section .why_us_container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 
 .why_us_section .why_us_container .box {
