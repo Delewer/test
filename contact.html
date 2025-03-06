@@ -17,6 +17,8 @@
  <!-- bootstrap core css -->
  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
  <!-- fonts style -->
  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
@@ -79,68 +81,16 @@
     </header>
   </div>
 
-  <script>
+<script>
 
-    const translations = {
+  const translations = {
       "en": {
         "home": "Home",
         "project": "Catalogue",
         "contact": "Contact Us",
-        "slider-title-1": "Natural <br> sustainable <br> and eco-friendly materials",
-        "slider-title-2": "Custom <br> Woodworking & <br> Furniture Production",
-        "slider-title-3": "Wholesale & Retail <br> Wood & Construction <br> Materials",
-        "contact-button-1": "Contact Us",
-        "contact-button-2": "Contact Us",
-        "contact-button-3": "Contact Us",
-        "service-heading": "Our Services",
-        "service-description": "We provide complete solutions for wood processing, furniture production, trade, and construction.",
-        "service-1-title": "Furniture Production",
-        "service-1-description": "We create custom furniture from high-quality materials, tailored to your needs.",
-        "service-2-title": "Wood Processing",
-        "service-2-description": "We offer wood processing services for various industrial and commercial uses.",
-        "service-3-title": "Trade in Wood Materials",
-        "service-3-description": "We distribute wood materials and wood products for construction and furniture.",
-        "service-4-title": "Construction and Renovation",
-        "service-4-description": "We perform construction, renovation, and site preparation for real estate projects.",
-        "why_choose_us": "Why Choose Us?",
-        "project_done_on_time": "Project Done On Time",
-        "project_description": "We ensure all projects are completed on schedule, delivering quality results within the agreed timeline.",
-        "always_available": "Always Available",
-        "available_description": "Our team is available around the clock, offering support whenever you need it.",
-        "professional_responsible": "Professional & Responsible",
-        "professional_description": "We are a team of professionals who take responsibility for every aspect of the project, ensuring the best outcome.",
-        // Добавленные переводы для секции Featured Products
-        "featured-products-title": "Featured Products",
-        "product-1-title": "Wooden table",
-        "product-1-description": "Handcrafted with an elegant finish.",
-        "product-2-title": "Modern kitchen",
-        "product-2-description": "Minimalist design with generous space.",
-        "product-3-title": "Wooden Gazebo",
-        "product-3-description": "Perfect for boisterous parties and relaxing sunbathing, handmade.",
         "contact-us": "Contact us",
         "follow": "Follow us",
         "location":"Our location",
-        "projects-title": "Projects",
-        "filter-all": "Show all",
-        "filter-kitchens": "Kitchens",
-        "filter-doors": "Doors",
-        "filter-stairs": "Interior Stairs",
-        "filter-cabinets": "Cabinets",
-        "filter-tables": "Tables",
-        "filter-garden-tables": "Garden Tables",
-        "filter-gazebos": "Gazebos",
-        "contact-btn": "Contact Us",
-        "filter-paturi" : "Beds",
-        "filter-other" : "Decor",
-        "desc-bucatarii": "Modern and functional kitchens, designed to meet the highest standards of quality and aesthetics.",
-        "desc-paturi": "Comfortable and elegant beds, made from durable materials for a restful sleep.",
-        "desc-usi": "Solid wood doors, combining durability and aesthetics for a refined interior.",
-        "desc-scari": "Solid wood indoor stairs, adding elegance and functionality to any space.",
-        "desc-dulapuri": "Spacious and functional cabinets, made from high-quality wood.",
-        "desc-mese": "Solid wood tables, perfect for decorating any interior space.",
-        "desc-gradina": "Weather-resistant garden tables, ideal for decorating gardens or terraces.",
-        "desc-foisoare": "Rustic gazebos, ideal for relaxation and outdoor gatherings.",
-        "desc-diferite": "Unique and customized products, perfect for various decorative and functional purposes.",
         "contact-title": "Contact Us",
         "contact-description": "We are here to help! Leave us a message below.",
         "name-placeholder": "Your Name",
@@ -153,61 +103,9 @@
         "home": "Главная",
         "project": "Каталог",
         "contact": "Контакты",
-        "slider-title-1": "Натуральные <br> Экологичные <br> и Устойчивые Материалы",
-        "slider-title-2": "Деревообработка <br> и Производство <br> Индивидуальной Мебели",
-        "slider-title-3": "Оптовая и розничная торговля <br> Древесина и строительные материалы",
-        "contact-button-1": "Связаться с нами",
-        "contact-button-2": "Связаться с нами",
-        "contact-button-3": "Связаться с нами",
-        "service-heading": "Наши Услуги",
-        "service-description": "Мы предоставляем комплексные решения для обработки дерева, производства мебели, торговли и строительства.",
-        "service-1-title": "Производство Мебели",
-        "service-1-description": "Мы создаем индивидуальную мебель из высококачественных материалов, адаптированную к вашим потребностям.",
-        "service-2-title": "Обработка Дерева",
-        "service-2-description": "Мы предоставляем услуги по обработке дерева для различных промышленных и коммерческих нужд.",
-        "service-3-title": "Торговля Древесными Материалами",
-        "service-3-description": "Мы поставляем древесные материалы и изделия из дерева для строительства и мебели.",
-        "service-4-title": "Строительство и Ремонт",
-        "service-4-description": "Мы выполняем строительные работы, ремонт и подготовку участка для недвижимости.",
-        "why_choose_us": "Почему выбирают нас?",
-        "project_done_on_time": "Проект выполнен вовремя",
-        "project_description": "Мы гарантируем, что все проекты будут завершены в срок, обеспечивая качественные результаты в оговоренные временные рамки.",
-        "always_available": "Всегда на связи",
-        "available_description": "Наша команда доступна круглосуточно, предоставляя поддержку в любое время, когда вам это нужно.",
-        "professional_responsible": "Профессионалы и ответственные",
-        "professional_description": "Мы — команда профессионалов, которые берут на себя ответственность за каждый аспект проекта, гарантируя лучший результат.",
-    // Добавленные переводы для секции Featured Products
-        "featured-products-title": "Рекомендуемые товары",
-        "product-1-title": "Деревянный стол",
-        "product-1-description": "Элегантная ручная работа.",
-        "product-2-title": "Современная кухня",
-        "product-2-description": "Минималистичный дизайн и простор.",
-        "product-3-title": "Деревянная беседка",
-        "product-3-description": "Идеально подходит для шумных вечеринок и расслабляющего принятия солнечных ванн, ручная работа.",
         "contact-us": "Связаться с нами",
         "follow": "Подпишись",
         "location":"Наше местоположение",
-        "projects-title": "Проекты",
-        "filter-all": "Показать все",
-        "filter-kitchens": "Кухни",
-        "filter-doors": "Двери",
-        "filter-stairs": "Лестницы",
-        "filter-cabinets": "Шкафы",
-        "filter-tables": "Столы",
-        "filter-garden-tables": "Садовая мебель",
-        "filter-gazebos": "Беседки",
-        "filter-paturi" : "Кровати",
-        "filter-other" : "Декор",
-        "contact-btn": "Связаться с нами",
-        "desc-bucatarii": "Современные и функциональные кухни, разработанные для соответствия самым высоким стандартам качества и эстетики.",
-        "desc-paturi": "Удобные и элегантные кровати, изготовленные из прочных материалов для спокойного сна.",
-        "desc-usi": "Двери из массива дерева, сочетающие долговечность и эстетику для изысканного интерьера.",
-        "desc-scari": "Внутренние лестницы из массива дерева, добавляющие элегантности и функциональности любому пространству.",
-        "desc-dulapuri": "Просторные и функциональные шкафы, изготовленные из высококачественной древесины.",
-        "desc-mese": "Столы из массива дерева, идеально подходящие для украшения любого интерьера.",
-        "desc-gradina": "Устойчивые к погодным условиям, идеальные для украшения сада или террасы.",
-        "desc-foisoare": "Рустикальные беседки, идеальные для отдыха и встреч на открытом воздухе.",
-        "desc-diferite": "Уникальные и персонализированные изделия, идеальные для различных декоративных и функциональных целей.",
         "contact-title": "Свяжитесь с нами",
         "contact-description": "Мы здесь, чтобы помочь! Оставьте нам сообщение ниже.",
         "name-placeholder": "Ваше имя",
@@ -220,61 +118,9 @@
         "home": "Principală",
         "project": "Catalog",
         "contact": "Contactează-ne",
-        "slider-title-1": "Materiale naturale <br> sustenabile <br> și prietenoase cu mediul",
-        "slider-title-2": "Prelucrare lemn <br> și Producție <br> Mobilier Personalizat",
-        "slider-title-3": "Comerț cu ridicata și cu amănuntul <br> Materiale lemnoase și de construcție",
-        "contact-button-1": "Contactează-ne",
-        "contact-button-2": "Contactează-ne",
-        "contact-button-3": "Contactează-ne",
-        "service-heading": "Serviciile noastre",
-        "service-description": "Oferim soluții complete pentru prelucrarea lemnului, producția de mobilier, comerț și construcții.",
-        "service-1-title": "Producție Mobilier",
-        "service-1-description": "Realizăm mobilier personalizat din materiale de calitate, adaptat nevoilor tale.",
-        "service-2-title": "Prelucrarea Lemnului",
-        "service-2-description": "Oferim servicii de prelucrare a lemnului pentru diverse utilizări industriale și comerciale.",
-        "service-3-title": "Comerț cu Materiale Lemnoase",
-        "service-3-description": "Distribuim materiale lemnoase și produse din lemn pentru construcții și mobilier.",
-        "service-4-title": "Construcții și Amenajări",
-        "service-4-description": "Executăm lucrări de construcții, renovări și pregătire a terenului pentru proiecte imobiliare.",
-        "why_choose_us": "De ce să ne alegi?",
-        "project_done_on_time": "Proiect Finalizat la Timp",
-        "project_description": "Ne asigurăm că toate proiectele sunt finalizate conform programului, oferind rezultate de calitate în termenul stabilit.",
-        "always_available": "Întotdeauna Disponibili",
-        "available_description": "Echipa noastră este disponibilă non-stop, oferind suport ori de câte ori aveți nevoie.",
-        "professional_responsible": "Profesioniști și Responsabili",
-        "professional_description": "Suntem o echipă de profesioniști care își asumă responsabilitatea pentru fiecare aspect al proiectului, garantând cel mai bun rezultat.",
-    // Добавленные переводы для секции Featured Products
-        "featured-products-title": "Produse Recomandate",
-        "product-1-title": "Masă din lemn",
-        "product-1-description": "Fabricată manual, cu un finisaj elegant.",
-        "product-2-title": "Bucătărie modernă",
-        "product-2-description": "Design minimalist cu spațiu generos.",
-        "product-3-title": "Foișor din lemn",
-        "product-3-description": "Perfect pentru petreceri gălăgioase și băi solare relaxante, realizat manual.",
         "contact-us": "Contactează-ne",
         "follow": "Abonează-te",
         "location":"Locația noastră",
-        "projects-title": "Proiecte",
-        "filter-all": "Arată toate",
-        "filter-kitchens": "Bucătării",
-        "filter-doors": "Uși",
-        "filter-stairs": "Scări de interior",
-        "filter-cabinets": "Dulapuri",
-        "filter-tables": "Mese",
-        "filter-garden-tables": "Mese de grădină",
-        "filter-gazebos": "Foișoare",
-        "filter-paturi" : "Paturi",
-        "filter-other" : "Decor",
-        "contact-btn": "Contactează-ne",
-        "desc-bucatarii": "Bucătării moderne și funcționale, proiectate pentru a satisface cele mai înalte standarde de calitate și estetică.",
-        "desc-paturi": "Paturi confortabile și elegante, realizate din materiale durabile pentru un somn odihnitor.",
-        "desc-usi": "Uși din lemn masiv, combinand durabilitatea și estetica pentru un interior rafinat.",
-        "desc-scari": "Scări din lemn masiv, care adaugă un plus de eleganță și funcționalitate oricărui spațiu.",
-        "desc-dulapuri": "Dulapuri spațioase și funcționale, realizate din lemn de înaltă calitate.",
-        "desc-mese": "Mese din lemn masiv, perfecte pentru decorarea oricărui spațiu interior.",
-        "desc-gradina": "Mese rezistente la intemperii, ideale pentru decorarea grădinii sau terasei.",
-        "desc-foisoare": "Foișoare rustice, ideale pentru relaxare și petreceri în aer liber.",
-        "desc-diferite": "Produse unice și personalizate, perfecte pentru diverse scopuri decorative și funcționale.",
         "contact-title": "Contactați-ne",
         "contact-description": "Suntem aici pentru a vă ajuta! Lăsați-ne un mesaj mai jos.",
         "name-placeholder": "Numele dumneavoastră",
@@ -306,23 +152,23 @@
       document.getElementById('message').placeholder = translations[language]["message-placeholder"];
       document.querySelector('#contactForm button[type="submit"]').innerText = translations[language]["submit-button"];
   
-    // Обновляем состояние переключателя языка
-    const languageImages = document.querySelectorAll('.language-selector img');
-      languageImages.forEach(img => {
-        if (img.getAttribute('onclick').includes(`'${language}'`)) {
-          img.classList.add('active');
-        } else {
-          img.classList.remove('active');
-        }
-      });
+// Обновляем состояние переключателя языка
+const languageImages = document.querySelectorAll('.language-selector img');
+  languageImages.forEach(img => {
+    if (img.getAttribute('onclick').includes(`'${language}'`)) {
+      img.classList.add('active');
+    } else {
+      img.classList.remove('active');
     }
-    
-    // При загрузке страницы проверяем сохраненный язык
-    window.onload = function() {
-      const savedLanguage = localStorage.getItem('selectedLanguage') || 'ro'; // По умолчанию румынский
-      changeLanguage(savedLanguage);
-    };
-    </script>
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const savedLanguage = localStorage.getItem('selectedLanguage') || 'ro';
+  console.log('Loaded language:', savedLanguage); // Для отладки
+  changeLanguage(savedLanguage);
+});
+</script>
 </body>
 
 
