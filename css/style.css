@@ -411,76 +411,108 @@ a:focus {
   filter: brightness(1);
 }
 
-/* Produse Recomandate - Stil Sofisticat */
+/* Produse Recomandate - Современный и адаптивный стиль */
 .featured-products {
-  padding: 100px 0;
+  padding: 80px 0;
+  background-color: #f9f9f9; /* Светлый фон для контраста */
   text-align: center;
 }
 
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px; /* Отступы для маленьких экранов */
+}
+
 .section-title {
-  font-size: 40px;
-  color: #222;
-  font-weight: 600;
-  margin-bottom: 60px;
-  letter-spacing: 1px;
+  font-size: 36px;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #165B33; /* Зеленый акцент из вашего проекта */
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .products-grid {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Адаптивная сетка */
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.product {
-  width: 320px;
+.product-card {
   background: #ffffff;
-  border-radius: 18px;
-  padding: 40px;
-  text-align: left;
+  border-radius: 16px;
+  overflow: hidden; /* Для скругленных углов изображения */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.product:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.product img {
+.product-image {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 25px;
+  height: 250px; /* Фиксированная высота для единообразия */
+  object-fit: cover; /* Изображение заполняет контейнер */
+  border-radius: 16px 16px 0 0; /* Скругление только сверху */
+  display: block;
 }
 
-.product h3 {
-  font-size: 22px;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
+/* Адаптивность */
+@media (max-width: 768px) {
+  .featured-products {
+      padding: 60px 0;
+  }
 
-.product p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
-}
+  .section-title {
+      font-size: 28px;
+      margin-bottom: 40px;
+  }
 
-/* Responsive */
-@media (max-width: 900px) {
   .products-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
+      gap: 30px;
   }
 
-  .product {
-    width: 90%;
-    padding: 30px;
+  .product-card {
+      max-width: 300px;
+      margin: 0 auto; /* Центрирование на маленьких экранах */
+  }
+
+  .product-image {
+      height: 200px;
   }
 }
 
+@media (max-width: 480px) {
+  .section-title {
+      font-size: 24px;
+  }
+
+  .products-grid {
+      gap: 20px;
+  }
+
+  .product-image {
+      height: 180px;
+  }
+}
 /* Section heading */
 .project_section .heading_container {
   margin-bottom: 40px;
@@ -522,117 +554,6 @@ a:focus {
   color: #fff;
 }
 
-/* Project box */
-.project_section .box {
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  height: 320px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.project_section .box:hover {
-  transform: scale(1.05);
-}
-
-.project_section .box .img-box {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.project_section .box .img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
-}
-
-.project_section .box:hover .img-box img {
-  opacity: 0.8;
-}
-
-/* Project details */
-.project_section .box .detail-box {
-  padding: 15px;
-  background-color: #165B33;
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.project_section .box:hover .detail-box {
-  opacity: 1;
-  visibility: visible;
-}
-
-.project_section .box .detail-box h5 {
-  font-weight: bold;
-}
-
-/* Carousel Navigation */
-.project_section .project_carousel {
-  margin-top: 50px;
-}
-
-.project_section .owl-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.project_section .owl-nav button {
-  width: 40px;
-  height: 40px;
-  background-color: #333333;
-  color: #fff;
-  border-radius: 50%;
-  font-size: 18px;
-  transition: background-color 0.3s;
-  border: none;
-}
-
-.project_section .owl-nav button:hover {
-  background-color: #165B33;
-}
-
-/* Project item style */
-.project-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-item img {
-  width: 100%;
-  height: auto;
-  max-width: 250px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  text-align: center;
-  margin-top: 10px;
-  text-transform: uppercase;
-}
-
 /* Project container */
 .project-container {
   display: grid;
@@ -642,7 +563,7 @@ a:focus {
 }
 
 /* Individual project card */
-.project-card {
+.project-card, .project-card-u {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
@@ -653,7 +574,7 @@ a:focus {
   cursor: pointer;
 }
 
-.project-card img {
+.project-card img, .project-card-u img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -661,26 +582,11 @@ a:focus {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.project-card-u {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-
 .project-card-u img {
-  width: 100%;
-  height: 220px;
   object-fit: contain;
-  border-bottom: 3px solid #165B33;
-  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.project-card:hover img {
+.project-card:hover img, .project-card-u:hover img {
   transform: scale(1.05);
   filter: brightness(0.9);
 }
@@ -704,33 +610,9 @@ a:focus {
 }
 
 /* Hover effect for card */
-.project-card:hover {
+.project-card:hover, .project-card-u:hover {
   transform: translateY(-6px);
   box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.2);
-}
-
-/* Filter buttons */
-.filter-btn {
-  background-color: #165B33;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.filter-btn:hover {
-  background-color: #0E3A22;
-  transform: translateY(-2px);
-}
-
-.filter-btn.active {
-  background-color: #0E3A22;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Filterable items */
@@ -741,6 +623,128 @@ a:focus {
 .filterDiv.show {
   display: block;
 }
+
+/* Category description */
+.category-description {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.category-description h2 {
+  font-size: 24px;
+  color: #165B33;
+  margin-bottom: 10px;
+}
+
+.category-description p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  background-color: #165B33;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #0E3A22;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #165B33;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .modal-content img {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .close {
+    font-size: 24px;
+    top: 5px;
+    right: 10px;
+  }
+
+  #contact-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -1085,10 +1089,20 @@ a:focus {
   background: #bc570d;
 }
 
+.footer_contact a {
+  color: inherit; /* Наследует цвет текста */
+  transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.footer_contact a:hover {
+  color: #007bff; /* Цвет при наведении (например, синий) */
+}
+
 .footer_section .footer_contact ul {
   list-style: none;
   padding: 0;
 }
+
 
 .footer_section .footer_contact ul li {
   font-size: 14px;
@@ -1162,111 +1176,5 @@ a:focus {
   }
 }
 
-/* Стили для модального окна */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90%;
-  width: 600px; /* Уменьшается на мобильных */
-  text-align: center;
-  position: relative;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-/* Картинка в модальном окне */
-.modal-content img {
-  width: 100%;
-  height: auto;
-  max-height: 60vh; /* Чтобы картинка не выходила за экран */
-  object-fit: scale-down;
-  border-radius: 8px;
-}
-
-/* Кнопка закрытия */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
-  cursor: pointer;
-}
-
-/* Кнопка "Связаться" */
-#contact-btn {
-  display: block;
-  width: 100%;
-  max-width: 200px;
-  margin: 15px auto 0;
-  padding: 10px;
-  background: #165b33;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-#contact-btn:hover {
-  background: #21884c;
-}
-
-/* Анимация появления */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-  .modal-content {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .modal-content img {
-    max-height: 50vh;
-  }
-}
-
-@media (max-width: 480px) {
-  .modal-content {
-    width: 95%;
-    padding: 10px;
-  }
-
-  .close {
-    font-size: 24px;
-    top: 5px;
-    right: 10px;
-  }
-
-  #contact-btn {
-    font-size: 14px;
-    padding: 8px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
