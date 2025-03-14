@@ -279,7 +279,7 @@ a:focus {
   display: flex;
   align-items: center;
   background-image: url(../images/slider-bg.jpg);
-  background-size: cover;
+  background-size:cover;
 }
 .slider_section .dot_design {
   position: absolute;
@@ -411,12 +411,6 @@ a:focus {
   filter: brightness(1);
 }
 
-/* Produse Recomandate - Современный и адаптивный стиль */
-.featured-products {
-  padding: 80px 0;
-  background-color: #f9f9f9; /* Светлый фон для контраста */
-  text-align: center;
-}
 
 .container {
   max-width: 1240px;
