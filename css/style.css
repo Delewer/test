@@ -281,6 +281,23 @@ a:focus {
   background-image: url(../images/slider-bg.jpg);
   background-size:cover;
 }
+
+/* Для небольших экранов, чтобы избежать обрезки */
+@media (max-width: 768px) {
+  .slider_section {
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+/* Для очень маленьких экранов, например, мобильных */
+@media (max-width: 480px) {
+  .slider_section {
+    background-size:cover;
+    background-position: center;
+  }
+}
 .slider_section .dot_design {
   position: absolute;
   width: 450px;
@@ -307,8 +324,11 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 50px;
-  color: #ffffff;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
 }
+
 .slider_section .detail-box p {
   color: #6d6d6d;
 }
