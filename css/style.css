@@ -334,9 +334,6 @@ a:focus {
     text-transform: uppercase;
     margin-top: 50px;
     color: rgb(83, 172, 80);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-    -webkit-text-stroke: 1px rgba(70, 190, 72, 0.1);
-    background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
     padding: 2px 6px;
     display: inline-block;
   }
@@ -349,9 +346,6 @@ a:focus {
     text-transform: uppercase;
     margin-top: 50px;
     color: rgb(83, 172, 80);
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    -webkit-text-stroke: 1px rgba(33, 190, 36, 0.1);
-    background: rgba(165, 165, 165, 0.2); /* Полупрозрачный фон */
     border-radius: 5%;
     padding: 2px 6px;
     display: inline-block;
@@ -365,7 +359,6 @@ a:focus {
 .slider_section .detail-box .btn-box {
   display: flex;
   margin: 0 -5px;
-  margin-top: 45px;
 }
 .slider_section .detail-box .btn-box a {
   margin: 5px;
@@ -400,6 +393,7 @@ a:focus {
   width: 100%;
 }
 .slider_section .carousel-indicators {
+  display: none;
   position: unset;
   margin: 0;
   justify-content: center;

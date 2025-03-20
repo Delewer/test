@@ -132,6 +132,7 @@
 @media (max-width: 480px) {
   .slider_section .detail-box h1 {
     font-size: 2rem;
+    margin-top: 65%;
   }
 
   .client_section .box {
