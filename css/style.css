@@ -279,23 +279,21 @@ a:focus {
   display: flex;
   align-items: center;
   background-image: url(../images/slider-bg.jpg);
-  background-size:cover;
 }
 
 /* Для небольших экранов, чтобы избежать обрезки */
 @media (max-width: 768px) {
   .slider_section {
-    background-size: cover;
     height: auto;
-    min-height: 100vh;
+    background-image: url(../images/slider-bgs.jpg);
   }
 }
 
 /* Для очень маленьких экранов, например, мобильных */
 @media (max-width: 480px) {
   .slider_section {
-    background-size:cover;
     background-position: center;
+    background-image: url(../images/slider-bgs.jpg);
   }
 }
 .slider_section .dot_design {
@@ -319,15 +317,47 @@ a:focus {
 }
 .slider_section .detail-box {
   color: #333333;
+  margin-top: 5%;
 }
 .slider_section .detail-box h1 {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 50px;
-  color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+  color: rgb(83, 172, 80);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  -webkit-text-stroke: 1px rgba(70, 190, 72, 0.1);
 }
+
+@media (max-width: 768px) {
+  .slider_section .detail-box h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: rgb(83, 172, 80);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    -webkit-text-stroke: 1px rgba(70, 190, 72, 0.1);
+    background: rgba(0, 0, 0, 0.3); /* Полупрозрачный фон */
+    padding: 2px 6px;
+    display: inline-block;
+  }
+}
+
+/* Для очень маленьких экранов, например, мобильных */
+@media (max-width: 480px) {
+  .slider_section .detail-box h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: rgb(83, 172, 80);
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    -webkit-text-stroke: 1px rgba(33, 190, 36, 0.1);
+    background: rgba(165, 165, 165, 0.2); /* Полупрозрачный фон */
+    border-radius: 5%;
+    padding: 2px 6px;
+    display: inline-block;
+  }
+}
+
 
 .slider_section .detail-box p {
   color: #6d6d6d;
